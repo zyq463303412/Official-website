@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>魔兽官网</title>
+</head>
+<body>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		ul li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+			color: #333;
+		}
+		.clearfix:after{
+			content:'';
+			display: block;
+			clear: both;
+		}
+
+		.layout{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.layout-900{
+			width: 900px;
+			margin: 0 auto;
+		}
+		body{
+			background-color: #000;
+		}
+
+		body,html{
+			height: 100%;
+			/*background-color: #333; */
+		}
+		header{
+			height: 100%;
+
+		}
+		header .big-video{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+		header .nav{
+			/*border:1px solid red;*/
+			/*margin-left: -2px;*/
+			padding-top:24px;
+
+		}
+		header .nav li{
+			float: left;
+			border-left: none;
+			border:1px solid #3f2a22;
+			height: 70px;
+			line-height: 70px;
+			width: 158px;
+			border-right:none;
+			background: #261712;
+			text-align: center;
+		}
+		header .nav li:last-child{
+			border-right:1px solid #3f2a22; 
+		}
+		header .nav li a{
+			display: inline-block;
+			height: 70px;
+			line-height: 70px;
+			color: #f8b408;
+			width: 158px;
+			font-weight: bold;
+		}
+		header .nav li.logo a{
+			width: 240px;
+		}
+		header .nav li.logo{
+			width: 240px;
+		}
+		header .nav li.logo img{
+			position: relative;
+			top: -40px;
+		}
+
+
+		#content{
+			padding-top: 50px;
+			padding-bottom: 20px;
+			background: #120d0a;
+		}
+		#content .ct{
+			margin-left: -16px;
+
+		}
+		#content .ct .item{
+			position: relative;
+			float: left;
+			text-align: center;
+			margin-left: 16px;
+			width: 288px;
+		    /*overflow: hidden;*/
+		}
+		#content .ct .item a{
+			display: block;
+			transition: all .3s;
+		    overflow: hidden;
+		}
+		#content .ct .item:hover a{
+			transform: translateY(-30px);
+		}
+
+		#content .ct .item h5{
+			padding: 20px 0;
+			background: #251812;
+			color: #f8b700;
+			font-size: 16px;
+		}
+		#content .ct .item:hover h5{
+			color: #fff;
+		}
+
+		.business{
+			padding-top: 60px;
+		}
+		.business .logos{
+			float: left;
+			width: 400px;
+		}
+		.business .logos .ct a{
+			color: #fff;
+			margin-right: 20px;
+		}
+		.business .logos .ct .icon{
+			display: inline-block;
+			width: 26px;
+			height: 26px;
+			background: url(images/icons.png) no-repeat;
+			vertical-align: sub;
+			    margin-right: 6px;
+		}
+		.business .logos .ct .icon-fankui{
+			 background-position: 0 -26px;
+
+		}
+		.business .logos .ct .icon-join{
+			 background-position: -26px 0px;
+
+		}
+		.business .logos .partner{
+		    margin-top: 40px;
+		}
+		.business .logos .partner a{
+			display: inline-block;
+			vertical-align: top;
+		}
+		.business .logos .partner .wangyi{
+			margin-top: 40px;
+		}
+
+		.business .info{
+			margin-left: 400px;
+		    text-align: center;
+		}
+		.suggestion{
+			border-top:1px solid #ddd;
+			padding-bottom: 40px;
+
+		}
+
+		.suggestion p{
+			color: #ddd;
+			font-size:12px;
+			text-align: center;
+		    padding-top: 40px;
+		}
+	</style>
+	<header>
+		<div class="big-video">
+			<video preload="true" autoplay="autoplay" loop="true">
+				<source type="video/mp4" src="./images/bigvideo.mp4">
+			</video>
+		</div>
+		<ul class="nav layout clearfix">
+			<li><a href="">进入官网</a></li>	
+			<li><a href="">账号注册</a></li>	
+			<li><a href="">重置管理</a></li>	
+			<li class="logo"><a href=""><img src="images/logo.png" alt=""></a></li>	
+			<li><a href="">游戏下载</a></li>	
+			<li><a href="">客服中心</a></li>	
+			<li><a href="">官方论坛</a></li>	
+		</ul>
+	</header>
+
+	<div id="content">
+		<div class="layout">
+		<ul class="ct clearfix">
+			<li class="item"><a href="">
+				<h5>全新职业恶魔猎手</h5>
+				<img src="images/game1.jpg" alt="">
+			</a></li>
+			<li class="item"><a href="">
+				<h5>全新职业恶魔猎手</h5>
+				<img src="images/game2.jpg" alt="">
+			</a></li>
+			<li class="item"><a href="">
+				<h5>全新职业恶魔猎手</h5>
+				<img src="images/game3.jpg" alt="">
+			</a></li>
+			<li class="item"><a href="">
+				<h5>全新职业恶魔猎手</h5>
+				<img src="images/game4.jpg" alt="">
+			</a></li>
+		</ul>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="business layout-900 clearfix">
+			<div class="logos">
+				<div class="ct">
+					<a href=""><span class="icon icon-kefu"></span>在线客服</a>
+					<a href=""><span class="icon icon-fankui"></span>在线客服</a>
+					<a href=""><span class="icon icon-join"></span>在线客服</a>
+				</div>
+				<div class="partner">
+					<a href="" ><img src="images/partner1.png" alt=""></a>
+					<a href="" class="wangyi"><img src="images/partner2.png" alt=""></a>
+				</div>
+			</div>
+
+			<div class="info">
+				<a href="" class="logo-bliz"><img src="images/business-logo-wow.png" alt=""></a>
+				<a href="" class="logo-wangyi"><img src="imgaes/partner2.png" alt=""></a>
+			</div>
+		</div>
+		<div class="suggestion layout">
+			<p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。<br>
+
+健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+		</div>
+	</div>
+</body>
+</html>
